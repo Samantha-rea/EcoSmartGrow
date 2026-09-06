@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neon & Dark Theme Redesign Colors -->
+    <color name="neon_green">#39FF14</color>
+    <color name="neon_green_dark">#28B80D</color>
+    <color name="neon_green_alpha">#4D39FF14</color>
+    <color name="neon_blue">#00F3FF</color>
+    <color name="neon_blue_dark">#00B8C2</color>
+    <color name="neon_blue_alpha">#4D00F3FF</color>
+    <color name="neon_purple">#BC13FE</color>
+    <color name="neon_purple_alpha">#4DBC13FE</color>
+    <color name="neon_pink">#FF00E4</color>
+    <color name="neon_pink_alpha">#4DFF00E4</color>
+    <color name="neon_cyan">#00FFFF</color>
+    <color name="neon_cyan_alpha">#4D00FFFF</color>
+
+    <color name="dark_bg">#0D1117</color>
+    <color name="dark_surface">#161B22</color>
+    <color name="dark_surface_variant">#21262D</color>
+    <color name="dark_border">#30363D</color>
+
+    <!-- Brand Colors -->
+    <color name="primary_green">@color/neon_green</color>
+    <color name="primary_dark">@color/neon_green_dark</color>
+    <color name="primary_light">@color/neon_green</color>
+    <color name="primary_lighter">@color/neon_green_alpha</color>
+
+    <!-- Accent Colors -->
+    <color name="accent_gold">@color/neon_pink</color>
+    <color name="accent_teal">@color/neon_blue</color>
+
+    <!-- Status Colors -->
+    <color name="success">#00C853</color>
+    <color name="warning">#FFA726</color>
+    <color name="danger">#FF1744</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Background -->
+    <color name="background_gray">#F5F5F5</color>
+    <color name="background_white">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_light">#FFFFFF</color>
+
+    <!-- Card Colors -->
+    <color name="card_ph">#E3F2FD</color>        <!-- Light Blue -->
+    <color name="card_temp">#FFF3E0</color>      <!-- Light Orange -->
+    <color name="card_ec">#F3E5F5</color>        <!-- Light Purple -->
+    <color name="card_tds">#E8F5E9</color>       <!-- Light Green -->
+    <color name="card_humidity">#E0F7FA</color>  <!-- Light Cyan -->
+
+    <!-- Bottom Navigation -->
+    <color name="bottom_nav_selected">#2E7D32</color>
+    <color name="bottom_nav_unselected">#9E9E9E</color>
+
+    <!-- Standard Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

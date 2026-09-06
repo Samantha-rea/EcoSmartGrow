@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.EcoSmartGrow" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/neon_green</item>
+        <item name="colorPrimaryVariant">@color/neon_green_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/neon_blue</item>
+        <item name="colorSecondaryVariant">@color/neon_blue_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/dark_bg</item>
+
+        <!-- Default text colors -->
+        <item name="android:textColorPrimary">@color/text_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <!-- Material Components specific -->
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/text_light</item>
+
+        <!-- Font -->
+        <item name="android:fontFamily">sans-serif</item>
+
+        <!-- Custom Card Styles -->
+        <item name="materialCardViewStyle">@style/Widget.EcoSmartGrow.CardView</item>
+    </style>
+
+    <style name="Widget.EcoSmartGrow.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="Widget.EcoSmartGrow.CardView.Neon" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/dark_surface</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="strokeColor">@color/neon_green_alpha</item>
+        <item name="rippleColor">@color/neon_green_alpha</item>
+    </style>
+</resources>

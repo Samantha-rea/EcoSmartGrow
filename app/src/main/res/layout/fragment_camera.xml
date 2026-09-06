@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Monitoring"
+        android:textSize="24sp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.1" />
+
+    <!-- Camera Preview -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        style="@style/Widget.EcoSmartGrow.CardView.Neon"
+        app:strokeColor="@color/neon_green_alpha">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_camera_feed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#263238"
+                android:contentDescription="Camera Feed" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_no_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Signal\nWaiting for camera..."
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Connection Status -->
+    <TextView
+        android:id="@+id/tv_connection_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connecting..."
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:padding="8dp"
+        android:textColor="@color/neon_green"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold" />
+
+    <!-- Camera Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_take_photo"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Capture"
+            android:backgroundTint="@color/neon_green"
+            android:textColor="@color/black"
+            app:cornerRadius="12dp"
+            android:enabled="false"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_start_recording"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Record"
+            android:backgroundTint="@color/neon_pink"
+            android:textColor="@color/black"
+            app:cornerRadius="12dp"
+            android:enabled="false"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stop_recording"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Stop"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/dark_border"
+            android:textColor="@color/text_secondary"
+            app:cornerRadius="12dp"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <!-- Lettuce Detection Status -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.EcoSmartGrow.CardView.Neon"
+        app:strokeColor="@color/neon_blue_alpha">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_lettuce_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Detection: Waiting"
+                    android:textSize="15sp"
+                    android:textColor="@color/neon_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_lettuce_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lettuce: 0 | Ready: 0"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

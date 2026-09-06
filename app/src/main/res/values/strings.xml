@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EcoSmartGrow</string>
+    <string name="app_description">Smart Hydroponics Monitoring System</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_logs">Logs</string>
+    <string name="nav_camera">Camera</string>
+    <string name="nav_harvest">Harvest</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Dashboard -->
+    <string name="greeting_morning">Good Morning, Grower!</string>
+    <string name="greeting_afternoon">Good Afternoon, Grower!</string>
+    <string name="greeting_evening">Good Evening, Grower!</string>
+    <string name="greeting_night">Good Night, Grower!</string>
+    
+    <!-- Sensors -->
+    <string name="sensor_ph">pH</string>
+    <string name="sensor_temperature">Temperature</string>
+    <string name="sensor_ec">EC</string>
+    <string name="sensor_humidity">Humidity</string>
+    
+    <!-- Status -->
+    <string name="status_optimal">Optimal</string>
+    <string name="status_normal">Normal</string>
+    <string name="status_warning">Warning</string>
+    <string name="status_critical">Critical</string>
+    <string name="status_high">High</string>
+    <string name="status_low">Low</string>
+    
+    <!-- Quick Actions -->
+    <string name="action_scan">Scan</string>
+    <string name="action_report">Report</string>
+    <string name="action_setpoints">Setpoints</string>
+    <string name="action_camera">Camera</string>
+    
+    <!-- Harvest -->
+    <string name="harvest_countdown">%d days until harvest</string>
+    <string name="growth_stage_vegetative">Vegetative</string>
+    <string name="growth_stage_seedling">Seedling</string>
+    <string name="growth_stage_flowering">Flowering</string>
+    <string name="growth_stage_harvest">Harvest Ready</string>
+    
+    <!-- Settings -->
+    <string name="settings_auto_record">Enable automatic recording</string>
+    <string name="settings_notifications">Enable Notifications</string>
+    <string name="btn_save_settings">Save Settings</string>
+    <string name="settings_saved">Settings saved successfully!</string>
+</resources>
